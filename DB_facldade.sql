@@ -60,3 +60,5 @@ CREATE TABLE historico
      FOREIGN KEY (idaluno) REFERENCES aluno(idaluno),
      FOREIGN KEY (iddisciplina) REFERENCES disciplina(iddisciplina)
   ); 
+
+--então foram inseridos os dados para popular as tabelas 
