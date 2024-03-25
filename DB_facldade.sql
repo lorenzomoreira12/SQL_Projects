@@ -61,4 +61,4 @@ CREATE TABLE historico
      FOREIGN KEY (iddisciplina) REFERENCES disciplina(iddisciplina)
   ); 
 
---então foram inseridos os dados para popular as tabelas 
+-- então foram inseridos os dados para popular as tabelas --
