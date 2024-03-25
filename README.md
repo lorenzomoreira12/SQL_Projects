@@ -1,1 +1,1 @@
-# SQL_Projects
+O objetivo deste projeto foi criar um banco de dados de uma faculdade fictícia com MySql, após a criação do banco de dados foram inseridos valores para cada tabela e coluna, por fim realizada uma análise de dados exploratória, respondendo questões relacionadas aos alunos e cursos. 
