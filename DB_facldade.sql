@@ -62,3 +62,22 @@ CREATE TABLE historico
   ); 
 
 -- então foram inseridos os dados para popular as tabelas --
+--Exploratory data analysis--
+
+-- listar o nome de todos os alunos e seus respectivos cursos, listando nomes por desc--
+SELECT c.nome AS nome_curso, a.nome AS nome_aluno
+FROM curso c
+INNER JOIN alunocurso ac ON c.idCurso = ac.idCurso
+INNER JOIN aluno a ON ac.idAluno = a.idAluno
+ORDER BY nome_aluno DESC;
+
+-- Media das notas das disciplinas de todos os cursos--
+SELECT AVG(nota) AS media_notas, idDisciplina 
+FROM historico
+GROUP BY idDisciplina
+
+--listar o nome de todos os cursos e quantidade de alunos em cada curso--
+SELECT c.nome AS nome_curso, COUNT(ac.idAluno) AS quantidade_alunos
+FROM curso c
+LEFT JOIN alunocurso ac ON c.idCurso = ac.idCurso
+GROUP BY c.nome;
